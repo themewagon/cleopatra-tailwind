@@ -1202,6 +1202,11 @@ div.code-toolbar .toolbar button:hover {
   margin-right: 1rem;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -1377,8 +1382,8 @@ div.code-toolbar .toolbar button:hover {
   height: 100%;
 }
 
-.h-screen{
-  height: 100vh;
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .w-1\/2{
@@ -1427,6 +1432,10 @@ div.code-toolbar .toolbar button:hover {
 
 .w-full{
   width: 100%;
+}
+
+.max-w-7xl{
+  max-width: 80rem;
 }
 
 .flex-1{
@@ -1556,6 +1565,10 @@ div.code-toolbar .toolbar button:hover {
 
 .border-r-0{
   border-right-width: 0px;
+}
+
+.border-t{
+  border-top-width: 1px;
 }
 
 .border-t-0{
@@ -1711,6 +1724,11 @@ div.code-toolbar .toolbar button:hover {
   padding-right: 1rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1737,6 +1755,10 @@ div.code-toolbar .toolbar button:hover {
 
 .pl-3{
   padding-left: 0.75rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-left{
@@ -1914,6 +1936,11 @@ div.code-toolbar .toolbar button:hover {
   color: rgb(20 184 166 / var(--tw-text-opacity));
 }
 
+.text-teal-600{
+  --tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
+}
+
 .text-teal-700{
   --tw-text-opacity: 1;
   color: rgb(15 118 110 / var(--tw-text-opacity));
@@ -1999,6 +2026,15 @@ div.code-toolbar .toolbar button:hover {
 .hover\:text-teal-600:hover{
   --tw-text-opacity: 1;
   color: rgb(13 148 136 / var(--tw-text-opacity));
+}
+
+.hover\:text-teal-700:hover{
+  --tw-text-opacity: 1;
+  color: rgb(15 118 110 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover{
+  text-decoration-line: underline;
 }
 
 .hover\:shadow-md:hover{

@@ -22,7 +22,9 @@ task("livepreview", (done) => {
       baseDir: options.paths.dist.base,
     },
     port: 8080,
-    https: true,
+    // NOTE: HTTPS can crash on some local environments (shows up as "AggregateError").
+    // Use HTTP for a more reliable local dev experience.
+    https: false,
     notify: false,
     open: false,
   });
