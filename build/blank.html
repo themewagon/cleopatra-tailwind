@@ -334,7 +334,7 @@
 
 
 <!-- strat wrapper -->
-<div class="h-screen flex flex-row flex-wrap">
+<div class="min-h-screen flex flex-row flex-wrap">
   
     <!-- start sidebar -->
   <div id="sideBar" class="relative flex flex-col flex-wrap bg-white border-r border-gray-300 p-6 flex-none w-64 md:-ml-64 md:fixed md:top-0 md:z-30 md:h-screen md:shadow-xl animated faster">
@@ -489,6 +489,21 @@
   <!-- strat content -->
   <div class="bg-gray-100 flex-1 p-6 md:mt-16">
     content here
+
+    <!-- footer -->
+<div class="mt-10 pt-4 border-t border-gray-200 text-center text-xs text-gray-600">
+  Copyright <span id="tw-current-year"></span> ©
+  <a href="https://moesaid.com/" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:text-teal-700 hover:underline">
+    Moesaid
+  </a>.
+  All Right Reserved. Distributed by
+  <a href="https://themewagon.com/" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:text-teal-700 hover:underline">
+    ThemeWagon
+  </a>
+</div>
+<!-- end footer -->
+
+
   </div>
   <!-- end content -->
 
@@ -502,5 +517,14 @@
 <script src="js/scripts.js"></script>
 <!-- end script -->
 
+<script>
+  (function () {
+    var el = document.getElementById('tw-current-year');
+    if (el) el.textContent = new Date().getFullYear();
+  })();
+</script>
+
 </body>
 </html>
+
+
